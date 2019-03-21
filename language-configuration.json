@@ -9,13 +9,15 @@
     "brackets": [
         ["{", "}"],
         ["[", "]"],
-        ["(", ")"]
+        ["(", ")"],
+        ["<", ">"]
     ],
     // symbols that are auto closed when typing
     "autoClosingPairs": [
         ["{", "}"],
         ["[", "]"],
         ["(", ")"],
+        ["<", ">"],
         ["\"", "\""],
         ["'", "'"]
     ],
@@ -24,7 +26,12 @@
         ["{", "}"],
         ["[", "]"],
         ["(", ")"],
+        ["<", ">"],
         ["\"", "\""],
         ["'", "'"]
-    ]
+    ],
+    "indentationRules": {
+        "decreaseIndentPattern": "}\\}\\]",
+        "increaseIndentPattern": "{\\(\\["
+    }
 }

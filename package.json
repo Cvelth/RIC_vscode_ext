@@ -2,7 +2,7 @@
     "name": "RenderInfoCompiler",
     "displayName": "RenderInfoCompiler",
     "description": "",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "engines": {
         "vscode": "^1.32.0"
     },
@@ -13,7 +13,7 @@
         "languages": [{
             "id": "ric",
             "aliases": ["RenderInfoCompiler-language", "ric"],
-            "extensions": ["ric"],
+            "extensions": ["ris"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{

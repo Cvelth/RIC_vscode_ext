@@ -3,30 +3,62 @@
 	"name": "RenderInfoCompiler-language",
 	"patterns": [
 		{
-			"include": "#keywords"
+			"name": "keyword.ric",
+			"match": "\\b(enable|disable|include|use|namespace)\\b"
 		},
 		{
-			"include": "#strings"
-		}
-	],
-	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.ric",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+			"name": "storage.type.ric",
+			"match": "\\b(color|palette|primitive|object)\\b"
 		},
-		"strings": {
+		{
+			"name": "storage.ric",
+			"match": "\\b(virtual)\\b"
+		},
+		{
+			"name": "constant.language.ric",
+			"match": "\\b(double_precision|color_alpha|filled)\\b"
+		},
+		{
+			"name": "support.function.ric",
+			"match": "\\b(square|circle|ellipse|rectangle|scale|translate|rotate)\\b"
+		},
+		{
+			"name": "constant.numeric.ric",
+			"match": "\\b([+-]?[0-9]*.?[0-9]+)\\b"
+		},
+		{
+			"name": "constant.numeric.ric",
+			"match": "\\b(0x[0-9A-Fa-f]+)\\b"
+		},
+		{
+			"name": "constant.numeric.ric",
+			"match": "PI"
+		},
+		{
+			"name": "variable.ric",
+			"match": "\\b([A-Za-z_][A-Za-z0-9_]*)\\b"
+		},
+		{
 			"name": "string.quoted.double.ric",
 			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.ric",
-					"match": "\\\\."
-				}
-			]
+			"end": "\""
+		},
+		{
+			"name": "string.quoted.double.ric",
+			"begin": "<",
+			"end": ">"
+		},
+		{
+			"name": "comment.line.ric",
+			"begin": "//",
+			"end": "\n"
+		},
+		{
+			"name": "comment.block.ric",
+			"begin": "/\\*",
+			"end": "\\*/"
 		}
-	},
+	],
+	"repository": {},
 	"scopeName": "source.ric"
 }
