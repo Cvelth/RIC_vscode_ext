@@ -1,0 +1,25 @@
+{
+    "name": "RenderInfoCompiler",
+    "displayName": "RenderInfoCompiler",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.32.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ric",
+            "aliases": ["RenderInfoCompiler-language", "ric"],
+            "extensions": ["ric"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ric",
+            "scopeName": "source.ric",
+            "path": "./syntaxes/ric.tmLanguage.json"
+        }]
+    }
+}
